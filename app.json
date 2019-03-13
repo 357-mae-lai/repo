@@ -1,0 +1,31 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ],
+  "description": "357 maelai repo",
+  "env": {
+    "LINECORP_PLATFORM_CHANNEL_CALLBACKURL": {
+      "required": true
+    },
+    "LINECORP_PLATFORM_CHANNEL_CHANNELID": {
+      "required": true
+    },
+    "LINECORP_PLATFORM_CHANNEL_CHANNELSECRET": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "repo",
+  "scripts": {
+  },
+  "stack": "heroku-16"
+}
